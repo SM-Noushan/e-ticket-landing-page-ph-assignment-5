@@ -97,9 +97,12 @@
                         you can run unit tests and view the results directly within the app. The integrated testing
                         features
                         allow for a streamlined .</p>
-                    <button type="button"
-                        class="text-secondary bg-primary hover:bg-primary/60 focus:ring-4 focus:outline-none focus:ring-primary/20 font-bold rounded-xl text-xl leading-normal px-3 md:px-7 py-4 md:py-4 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"><a
-                            href="#ticket-sect">Buy Tickets</a>
+                    <a href="#book-now" type="button">
+                        <button type="button"
+                            class="text-secondary bg-primary hover:bg-primary/60 focus:ring-4 focus:outline-none focus:ring-primary/20 font-bold rounded-xl text-xl leading-normal px-3 md:px-7 py-4 md:py-4 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Buy
+                            Tickets
+                        </button>
+                    </a>
                 </div>
                 <div
                     class="flex flex-col md:flex-row justify-center gap-6 mt-12 md:mt-0 px-4 md:px-0 md:relative md:top-[80px]">
@@ -191,6 +194,83 @@
                         href="#">See All Offers</a>
             </div>
         </section>
+        <!-- ticket-booking section -->
+        <section id="book-now" class="py-28 border-t-2 border-t-primary rounded-t-[88px]">
+            <!-- travel details -->
+            <div class="container mx-auto max-w-screen-xl">
+                <div class="*:font-raleway *:text-seconday text-center">
+                    <h1 class="text-3xl md:text-[40px] font-bold">NEO Travels</h1>
+                    <p class="mt-6 opacity-60 text-sm md:text-lg font-normal max-w-[691px] mx-auto dark:text-gray-400">
+                        Yes, you
+                        can run
+                        unit tests and view the results directly within the app. The integrated testing features allow
+                        for a streamlined .</p>
+                </div>
+                <div class="mt-12">
+                    <div class="flex justify-between rounded-3xl">
+                        <div class="">
+                            <div class="md:px-14 md:py-11 flex justify-between items-center gap-72">
+                                <div class="flex items-center gap-4">
+                                    <img src="B9A5-smart-ticketing/images/bus-logo.png" alt="icon-bus">
+                                    <p class="text-secondary font-raleway font-bold text-3xl leading-normal">Neo
+                                        Travels <br> <span
+                                            class="opacity-60 font-inter font-normal text-lg leading-normal">Coach-009-WEB
+                                            ! AC_Business</span></p>
+                                </div>
+                                <div class="flex items-center bg-primary/15 p-4 rounded-xl gap-3">
+                                    <img src="B9A5-smart-ticketing/images/bus-icon.png" alt="icon-bus">
+                                    <p class="font-inter text-lg leading-normal font-medium"> <span
+                                            id="numberOfSeats">40</span>
+                                        Seats left</p>
+                                </div>
+                            </div>
+                            <div class="bg-[#F7F8F8] rounded-3xl py-6 px-16">
+                                <div
+                                    class="md:py-6 flex justify-between items-center w-full gap-72 *:font-raleway *:text-seconday *:font-medium">
+                                    <p class="opacity-60  text-lg leading-normal">Route</p>
+                                    <p class="text-lg leading-normal">Dhaka - Sylhet</p>
+                                </div>
+                                <hr class="h-1 border-dashed border-secondary/20">
+                                <div
+                                    class="md:py-6 flex justify-between items-center w-full gap-72 *:font-raleway *:text-seconday *:font-medium">
+                                    <p class="opacity-60  text-lg leading-normal">Departure Time</p>
+                                    <p class="text-lg leading-normal">9:00 PM</p>
+                                </div>
+                                <hr class="h-1 border-dashed border-secondary/20">
+                                <div
+                                    class="md:py-6 flex justify-between items-center *:font-raleway *:text-seconday *:font-medium">
+                                    <div class="px-4 py-5 rounded-xl bg-secondary/5">
+                                        <p class="text-secondary/80 text-base leading-normal font-inter font-medium">
+                                            Boarding Point -
+                                            Laxmipur</p>
+                                    </div>
+                                    <div class="px-4 py-5 rounded-xl bg-secondary/5">
+                                        <p class="text-secondary/80 text-base leading-normal font-inter font-medium">
+                                            Dropping Point - Bogura</p>
+                                    </div>
+                                    <div class="px-4 py-5 rounded-xl bg-secondary/5">
+                                        <p class="text-secondary/80 text-base leading-normal font-inter font-medium">
+                                            Est. Time - 11 Hour</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <img src="B9A5-smart-ticketing/images/info-devider.png" alt="img-divider">
+                        </div>
+                        <!-- fare per seat -->
+                        <div
+                            class="md:px-14 md:py-11 flex flex-col justify-center items-center gap-4 font-raleway text-secondary text-center">
+                            <img src="B9A5-smart-ticketing/images/fare.png" alt="icon-fare">
+                            <p class="text-lg md:text-3xl font-bold">550Taka <br>
+                                <span class=" text-base md:text-xl md:leading-[40px] font-medium opacity-40">Per
+                                    Seat</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <footer class="bg-secondary dark:bg-gray-900">
         <div class="mx-auto w-full max-w-screen-xl">
@@ -204,7 +284,9 @@
                 <div class="text-white text-center">
                     <h2 class="md:text-right mb-5 text-xl leading-normal font-raleway font-semibold">Download our app
                     </h2>
-                    <img src="B9A5-smart-ticketing/images/playstore.svg" alt="icon-playstore">
+                    <a href="https://play.google.com/store/games?hl=en&gl=US">
+                        <img src="B9A5-smart-ticketing/images/playstore.svg" alt="icon-playstore">
+                    </a>
                 </div>
             </div>
             <hr class="h-0 mb-12 bg-white/20 border-dashed dark:bg-gray-700">
