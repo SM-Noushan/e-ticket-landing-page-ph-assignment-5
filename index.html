@@ -144,6 +144,7 @@
         </section>
     </header>
     <main>
+        <!-- coupon section -->
         <section class="container mx-auto my-36 space-y-12">
             <div class="text-center">
                 <h1 class="text-secondary text-3xl md:text-[40px] font-raleway font-bold">Best offers for you</h1>
@@ -191,7 +192,7 @@
             <div class="text-center">
                 <button type="button"
                     class="text-primary bg-white border border-primary hover:bg-gray-200 focus:ring-4 focus:outline-none focus:ring-primary/20 font-raleway font-bold rounded-xl text-xl leading-normal px-3 md:px-7 py-4 md:py-4 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"><a
-                        href="#">See All Offers</a>
+                        href="">See All Offers</a>
             </div>
         </section>
         <!-- ticket-booking section -->
@@ -207,38 +208,40 @@
                         for a streamlined .</p>
                 </div>
                 <div class="mt-12">
-                    <div class="flex justify-between rounded-3xl">
+                    <div class="flex flex-col-reverse md:flex-row justify-between rounded-3xl">
                         <div class="">
-                            <div class="md:px-14 md:py-11 flex justify-between items-center gap-72">
-                                <div class="flex items-center gap-4">
+                            <div class="md:px-14 md:py-11 flex justify-between items-center lg:gap:36 xl:gap-72">
+                                <div class="flex flex-col md:flex-row items-start md:items-center gap-4">
                                     <img src="B9A5-smart-ticketing/images/bus-logo.png" alt="icon-bus">
-                                    <p class="text-secondary font-raleway font-bold text-3xl leading-normal">Neo
+                                    <p class="text-secondary font-raleway font-bold text-xl md:text-3xl leading-normal">
+                                        Neo
                                         Travels <br> <span
-                                            class="opacity-60 font-inter font-normal text-lg leading-normal">Coach-009-WEB
+                                            class="opacity-60 font-inter font-normal text-base md:text-lg leading-normal">Coach-009-WEB
                                             ! AC_Business</span></p>
                                 </div>
-                                <div class="flex items-center bg-primary/15 p-4 rounded-xl gap-3">
-                                    <img src="B9A5-smart-ticketing/images/bus-icon.png" alt="icon-bus">
-                                    <p class="font-inter text-lg leading-normal font-medium"> <span
+                                <div
+                                    class="flex flex-col md:flex-row items-start md:items-center bg-primary/15 p-4 rounded-xl gap-3">
+                                    <img src="B9A5-smart-ticketing/images/seat-green.png" alt="icon-seat">
+                                    <p class="font-inter text-base md:text-lg leading-normal font-medium"> <span
                                             id="numberOfSeats">40</span>
                                         Seats left</p>
                                 </div>
                             </div>
-                            <div class="bg-[#F7F8F8] rounded-3xl py-6 px-16">
+                            <div class="bg-[#F7F8F8] rounded-3xl py-6 md:px-16 px-2">
                                 <div
-                                    class="md:py-6 flex justify-between items-center w-full gap-72 *:font-raleway *:text-seconday *:font-medium">
+                                    class="md:py-6 flex justify-between items-center w-full md:gap-72 *:font-raleway *:text-seconday *:font-medium">
                                     <p class="opacity-60  text-lg leading-normal">Route</p>
                                     <p class="text-lg leading-normal">Dhaka - Sylhet</p>
                                 </div>
                                 <hr class="h-1 border-dashed border-secondary/20">
                                 <div
-                                    class="md:py-6 flex justify-between items-center w-full gap-72 *:font-raleway *:text-seconday *:font-medium">
+                                    class="md:py-6 flex justify-between items-center w-full md:gap-72 *:font-raleway *:text-seconday *:font-medium">
                                     <p class="opacity-60  text-lg leading-normal">Departure Time</p>
                                     <p class="text-lg leading-normal">9:00 PM</p>
                                 </div>
                                 <hr class="h-1 border-dashed border-secondary/20">
                                 <div
-                                    class="md:py-6 flex justify-between items-center *:font-raleway *:text-seconday *:font-medium">
+                                    class="my-6 md:my-0 md:py-6 flex justify-between items-center *:font-raleway *:text-seconday *:font-medium">
                                     <div class="px-4 py-5 rounded-xl bg-secondary/5">
                                         <p class="text-secondary/80 text-base leading-normal font-inter font-medium">
                                             Boarding Point -
@@ -255,7 +258,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="flex items-center">
+                        <div class="hidden md:flex items-center">
                             <img src="B9A5-smart-ticketing/images/info-devider.png" alt="img-divider">
                         </div>
                         <!-- fare per seat -->
@@ -266,6 +269,227 @@
                                 <span class=" text-base md:text-xl md:leading-[40px] font-medium opacity-40">Per
                                     Seat</span>
                             </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- seat selection -->
+            <div class="flex flex-col lg:flex-row container mx-auto max-w-screen-xl mt-20 px-4 lg:*:px-14">
+                <div class="flex flex-col lg:border-r border-secondary/30 border-dashed min-w-[60%]">
+                    <div class="space-y-4">
+                        <p class="font-raleway font-semibold text-secondary text-2xl leading-normal">Select Your Seat
+                        </p>
+                        <hr class="h-1 border-dashed border-secondary/20">
+                        <div class="flex justify-between">
+                            <span class="flex items-center gap-2">
+                                <img src="B9A5-smart-ticketing/images/seat-gray.png" alt="icon-seat">
+                                <p
+                                    class="text-secondary opacity-50 font-inter font-medium text-base md:text-lg leading-normal">
+                                    Available</p>
+                            </span>
+                            <span class="flex items-center gap-2">
+                                <img src="B9A5-smart-ticketing/images/seat-green-filled.png" alt="icon-seat">
+                                <p class="text-primary font-inter font-medium text-base md:text-lg leading-normal">
+                                    Selected</p>
+                            </span>
+                        </div>
+                        <hr class="h-1 border-dashed border-secondary/20">
+                        <div class="text-right">
+                            <button class="bg-secondary/10 hover:bg-secondary/20 rounded-xl px-10 py-3"><img
+                                    src="B9A5-smart-ticketing/images/wheel.svg" alt="icon-wheel"></button>
+                        </div>
+                    </div>
+                    <!-- seat-row -->
+                    <div class="grid grid-cols-6 mt-6 lg:*:min-w-20">
+                        <div
+                            class="*:text-left *:rounded-xl *:py-4 *:text-secondary/50 *:text-lg *:leading-normal *:font-inter *:font-medium">
+                            <div class="">A</div>
+                            <div class="">B</div>
+                            <div class="">C</div>
+                            <div class="">D</div>
+                            <div class="">E</div>
+                            <div class="">F</div>
+                            <div class="">G</div>
+                            <div class="">H</div>
+                            <div class="">I</div>
+                            <div class="">J</div>
+                        </div>
+                        <div
+                            class="*:text-center *:rounded-xl *:py-4 *:text-secondary/50 *:text-lg *:leading-normal *:font-inter *:font-medium">
+                            <div id="A1" class="">A1</div>
+                            <div id="B1" class="">B1</div>
+                            <div id="C1" class="">C1</div>
+                            <div id="D1" class="">D1</div>
+                            <div id="E1" class="">E1</div>
+                            <div id="F1" class="">F1</div>
+                            <div id="G1" class="">G1</div>
+                            <div id="H1" class="">H1</div>
+                            <div id="I1" class="">I1</div>
+                            <div id="J1" class="">J1</div>
+                        </div>
+                        <div
+                            class="*:text-center *:rounded-xl *:py-4 *:text-secondary/50 *:text-lg *:leading-normal *:font-inter *:font-medium">
+                            <div id="A2" class="">A2</div>
+                            <div id="B2" class="">B2</div>
+                            <div id="C2" class="">C2</div>
+                            <div id="D2" class="">D2</div>
+                            <div id="E2" class="">E2</div>
+                            <div id="F2" class="">F2</div>
+                            <div id="G2" class="">G2</div>
+                            <div id="H2" class="">H2</div>
+                            <div id="I2" class="">I2</div>
+                            <div id="J2" class="">J2</div>
+                        </div>
+                        <div></div>
+                        <div
+                            class="*:text-center *:rounded-xl *:py-4 *:text-secondary/50 *:text-lg *:leading-normal *:font-inter *:font-medium">
+                            <div id="A3" class="">A3</div>
+                            <div id="B3" class="">B3</div>
+                            <div id="C3" class="">C3</div>
+                            <div id="D3" class="">D3</div>
+                            <div id="E3" class="">E3</div>
+                            <div id="F3" class="">F3</div>
+                            <div id="G3" class="">G3</div>
+                            <div id="H3" class="">H3</div>
+                            <div id="I3" class="">I3</div>
+                            <div id="J3" class="">J3</div>
+                        </div>
+                        <div
+                            class="*:text-center *:rounded-xl *:py-4 *:text-secondary/50 *:text-lg *:leading-normal *:font-inter *:font-medium">
+                            <div id="A4" class="">A4</div>
+                            <div id="B4" class="">B4</div>
+                            <div id="C4" class="">C4</div>
+                            <div id="D4" class="">D4</div>
+                            <div id="E4" class="">E4</div>
+                            <div id="F4" class="">F4</div>
+                            <div id="G4" class="">G4</div>
+                            <div id="H4" class="">H4</div>
+                            <div id="I4" class="">I4</div>
+                            <div id="J4" class="">J4</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- price area -->
+                <div class="mt-12 lg:mt-0 flex flex-col min-w-[40%]">
+                    <div class="space-y-4">
+                        <p class="font-raleway font-semibold text-secondary text-2xl leading-normal">Select Your Seat
+                        </p>
+                        <hr class="h-1 border-dashed border-secondary/20">
+                        <div class="relative overflow-x-auto">
+                            <table
+                                class="w-full text-sm text-left rtl:text-right bg-[#F7F8F8] rounded-xl text-gray-500 dark:text-gray-400 font-inter">
+                                <thead class="text-xs text-gray-700 uppercase dark:bg-gray-700 dark:text-gray-400">
+                                    <tr>
+                                        <th scope="col" class="py-4 lg:p-6 rounded-s-lg">
+                                            Seat <span class="bg-primary px-2 lg:px-4 py-1 rounded-full">0</span>
+                                        </th>
+                                        <th scope="col" class="py-4 lg:p-6">
+                                            Class
+                                        </th>
+                                        <th scope="col" class="py-4 lg:p-6 rounded-e-lg text-right">
+                                            Price
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <th colspan="3" class="lg:px-6 rounded-e-lg">
+                                            <hr class="h-1 border-dashed border-secondary/20">
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="dark:bg-gray-800">
+                                        <th scope="row"
+                                            class="lg:px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                            C2
+                                        </th>
+                                        <td class="lg:px-6 py-4">
+                                            Economy
+                                        </td>
+                                        <td class="lg:px-6 py-4 text-right">
+                                            550
+                                        </td>
+                                    </tr>
+                                    <tr class="dark:bg-gray-800">
+                                        <th scope="row"
+                                            class="lg:px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                            B1
+                                        </th>
+                                        <td class="lg:px-6 py-4">
+                                            Economy
+                                        </td>
+                                        <td class="lg:px-6 py-4 text-right">
+                                            550
+                                        </td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <th colspan="3" class="lg:px-6 rounded-e-lg">
+                                            <hr class="h-1 border-dashed border-secondary/20">
+                                        </th>
+                                    </tr>
+                                    <tr class="font-semibold text-gray-900 dark:text-white">
+                                        <th scope="row" class="lg:px-6 py-3 text-base">Total Price</th>
+                                        <td class="lg:px-6 py-3 text-right" colspan="2">BDT <span>1500</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="3">
+                                            <div class="max-w-md mx-auto">
+                                                <div class="relative w-[95%]">
+                                                    <input type="text" id="coupon"
+                                                        class="block w-full p-4 ps-5 text-sm text-gray-900 rounded-lg bg-gray-50 border-none focus:ring-0 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white"
+                                                        placeholder="Have any coupon?" />
+                                                    <button type="button"
+                                                        class="text-white absolute end-0 bottom-2 bg-primary hover:bg-primary/80 focus:outline-none focus:bg-primary/60 font-medium rounded-lg text-base px-6 py-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Apply</button>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="font-semibold text-gray-900 dark:text-white">
+                                        <th scope="row" colspan="2" class="lg:px-6 py-3 text-base">Grand Price</th>
+                                        <td class="lg:px-6 py-3 text-right">BDT <span id="grand-total">1100</span></td>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+                        <div>
+                            <div class="max-w-sm mx-auto font-inter">
+                                <div class="mb-5">
+                                    <label for="input-name"
+                                        class="block mb-2 text-base font-semibold text-secondary dark:text-white">Passenger
+                                        Name*</label>
+                                    <input type="text" id="input-name"
+                                        class="shadow-sm bg-gray-50 border border-secondary/10 text-gray-900 text-sm rounded-lg focus:border-secondary/20 focus:ring-0 block w-full p-4 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light"
+                                        placeholder="Enter your name" required />
+                                </div>
+                                <div class="mb-5">
+                                    <label for="input-phone-number"
+                                        class="block mb-2 text-base font-semibold text-secondary dark:text-white">Phone
+                                        Number*</label>
+                                    <input type="number" id="input-phone-number"
+                                        class="appearance-none shadow-sm bg-gray-50 border border-secondary/10 text-gray-900 text-sm rounded-lg focus:border-secondary/20 focus:ring-0 block w-full p-4 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light"
+                                        placeholder="Enter your phone number" required />
+                                </div>
+                                <div class="mb-5">
+                                    <label for="input-email"
+                                        class="block mb-2 text-base font-semibold text-secondary dark:text-white">Email
+                                        ID</label>
+                                    <input type="email" id="input-email"
+                                        class="shadow-sm bg-gray-50 border border-secondary/10 text-gray-900 text-sm rounded-lg focus:border-secondary/20 focus:ring-0 block w-full p-4 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light"
+                                        placeholder="Enter your email id" />
+                                </div>
+                                <button type="button"
+                                    class="text-white bg-primary hover:bg-primary/80 focus:ring-4 focus:outline-none focus:ring-primary/20 font-bold rounded-lg text-lg px-5 py-4 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 w-full">Next</button>
+                            </div>
+                            <div class="pt-4 flex sm:justify-center md:mt-0 space-x-5 rtl:space-x-reverse *:text-base
+                        *:leading-normal *:text-secondary/60 *:font-inter *:font-normal *:underline">
+                                <a href="#" class="hover:text-secondary dark:hover:text-white">
+                                    <span>Terms and Conditions</span>
+                                </a>
+                                <a href="#" class="hover:text-secondary dark:hover:text-white">
+                                    <span>Cancellation Policy</span>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
