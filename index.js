@@ -3,10 +3,10 @@ let selectedSeats = [];
 let totalSeats = 0;
 let invalidCoupon = false;
 
-// toggle disable property
+// remove disable property
 function toggleDisabled(id) {
     const element = document.getElementById(id);
-    element.removeAttribute('disabled')
+    element.removeAttribute('disabled');
 }
 
 // update seat prices
@@ -17,19 +17,21 @@ function updatePrices(elem, price) {
 
 //showing selected seat details eg. prices, discounts
 function updateSeatDetails(value) {
+    const elemRemainingSeats = document.getElementById('numberOfSeats');
     const elemTotalSeats = document.getElementById('total-seat');
     const element = document.getElementById('seat-details');
 
     elemTotalSeats.innerText = totalSeats;
+    elemRemainingSeats.innerText = 40 - totalSeats;
     element.innerHTML += `<tr class="dark:bg-gray-800">
         <th scope="row"
-            class="lg:px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+            class="lg:px-5 xl:px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
             ${value}
         </th>
-        <td class="lg:px-6 py-4">
+        <td class="lg:px-5 xl:px-6 py-4">
             Economy
         </td>
-        <td class="lg:px-6 py-4 text-right">
+        <td class="lg:px-5 xl:px-6 py-4 text-right">
             550
         </td>
     </tr>`
@@ -39,6 +41,12 @@ function updateSeatDetails(value) {
 
 // changing the selected seats bg-color
 function seatSelection(element) {
+    if (selectedSeats) {
+        for (const selectedSeat of selectedSeats) {
+            if (selectedSeat === element.innerText)
+                return false;
+        }
+    }
     if (totalSeats === 4)
         return false;
     selectedSeats.push(element.innerText);
@@ -86,13 +94,18 @@ function buyTicket() {
     const name = document.getElementById('input-name').value;
     const phoneNumber = document.getElementById('input-phone-number').value;
     const email = document.getElementById('input-email').value;
-    if (name && phoneNumber) {
-        console.log('abc');
+    if (name && phoneNumber && totalSeats) {
         const modal = document.getElementById('popup-modal');
         modal.classList.remove('hidden');
     }
 }
-
+function activateNext() {
+    const name = document.getElementById('input-name').value;
+    const phoneNumber = document.getElementById('input-phone-number').value;
+    if (!name || !phoneNumber || !totalSeats) return;
+    toggleDisabled('modal-btn');
+}
+// reload page after submission/rest ticket selection 
 function reload() {
     window.location.reload();
 }
@@ -101,8 +114,6 @@ elements = document.getElementsByClassName('seat-num');
 for (const element of elements) {
     element.addEventListener('click', (e) => {
         seatSelection(e.target);
+        activateNext();
     })
 }
-// document.addEventListener('click', () => {
-//     console.log('clicked');
-// })
